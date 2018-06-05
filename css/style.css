@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Lato", sans-serif; }
+
+span.color {
+  color: #3F93FF; }
+
+body {
+  background: white; }
+
+html {
+  font-size: 22px; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+.wrapper {
+  width: 90%;
+  height: 100%;
+  max-width: 1366px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto; }
+
+span.underline {
+  position: relative; }
+
+span.underline:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #3F93FF;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+.landingSection {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #121212; }
+  .landingSection .landingBack {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .landingSection .landingBack .background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: url(../img/landingBack05.jpg) center 20% no-repeat;
+      background-size: cover;
+      opacity: .2; }
+    .landingSection .landingBack .scrollbar {
+      position: absolute;
+      left: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      bottom: 0;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+      .landingSection .landingBack .scrollbar .bar {
+        width: 1px;
+        background: #3F93FF;
+        height: 50px; }
+      .landingSection .landingBack .scrollbar span {
+        margin-bottom: 5px;
+        font-weight: 300; }
+  .landingSection .wrapper nav {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .landingSection .wrapper nav a {
+      margin-left: 25px; }
+      .landingSection .wrapper nav a i {
+        -webkit-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+        transition: all ease-in-out .5s; }
+    .landingSection .wrapper nav #btnMenu {
+      margin-left: 25px;
+      cursor: pointer; }
+      .landingSection .wrapper nav #btnMenu .barra {
+        width: 40px;
+        height: 3px;
+        margin-bottom: 3px;
+        background: #3F93FF;
+        -webkit-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+        transition: all ease-in-out .5s; }
+      .landingSection .wrapper nav #btnMenu #barra5 {
+        width: 20px;
+        margin-bottom: 0; }
+      .landingSection .wrapper nav #btnMenu #barra3 {
+        width: 30px; }
+  .landingSection .wrapper .hero {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+    .landingSection .wrapper .hero h2 {
+      font-size: 92px;
+      line-height: 92px;
+      font-weight: 900; }
+    .landingSection .wrapper .hero h1 {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 32px;
+      margin-top: 10px; }
+
+.portfolioSection {
+  position: relative;
+  text-align: center;
+  padding-bottom: 250px;
+  background: #121212; }
+  .portfolioSection .portfolioBg {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .portfolioSection .portfolioBg .portfolioBar {
+      width: 1px;
+      height: 85%;
+      background: #3F93FF;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      z-index: 1; }
+  .portfolioSection .wrapper {
+    z-index: 99; }
+    .portfolioSection .wrapper h3 {
+      font-size: 42px;
+      line-height: 42px;
+      margin: 0 auto;
+      width: 60%;
+      padding: 50px 0; }
+    .portfolioSection .wrapper .proyecto {
+      width: 100%;
+      height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 20px 0px black;
+      box-shadow: 0px 0px 20px 0px black; }
+      .portfolioSection .wrapper .proyecto a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute; }
+      .portfolioSection .wrapper .proyecto .proyectoInfo {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: black; }
+        .portfolioSection .wrapper .proyecto .proyectoInfo h2 {
+          font-weight: 900;
+          font-size: 42px;
+          line-height: 42px; }
+          .portfolioSection .wrapper .proyecto .proyectoInfo h2 span {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 18px; }
+        .portfolioSection .wrapper .proyecto .proyectoInfo p {
+          width: 80%;
+          font-size: 20px;
+          line-height: 25px;
+          margin-top: 10px; }
+        .portfolioSection .wrapper .proyecto .proyectoInfo span.color {
+          margin-top: 15px; }
+      .portfolioSection .wrapper .proyecto .proyectoImage {
+        width: 40%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        z-index: 1; }
+        .portfolioSection .wrapper .proyecto .proyectoImage img {
+          width: 100%;
+          -webkit-transition: all ease-in-out 1s;
+          -o-transition: all ease-in-out 1s;
+          transition: all ease-in-out 1s; }
+        .portfolioSection .wrapper .proyecto .proyectoImage .proyectoImageHover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          background: #121212;
+          opacity: 0;
+          -webkit-transition: all ease-in-out .5s;
+          -o-transition: all ease-in-out .5s;
+          transition: all ease-in-out .5s; }
+        .portfolioSection .wrapper .proyecto .proyectoImage .proyectoImageLupa {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 3;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .portfolioSection .wrapper .proyecto .proyectoImage .proyectoImageLupa i {
+            font-size: 32px;
+            line-height: 32px;
+            padding: 30px;
+            background: #3F93FF;
+            border-radius: 100%;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: all ease-in-out .75s;
+            -o-transition: all ease-in-out .75s;
+            transition: all ease-in-out .75s;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
+    .portfolioSection .wrapper #proyecto01 .proyectoImage {
+      background: #ff5f5f; }
+    .portfolioSection .wrapper #proyecto02 {
+      margin-top: 40px; }
+
+.contactSection {
+  background: #white;
+  position: relative;
+  -webkit-box-shadow: 0px -15px 10px -5px black;
+  box-shadow: 0px -15px 10px -5px black; }
+  .contactSection .decorative {
+    width: 80%;
+    height: 70px;
+    background: white;
+    position: absolute;
+    top: -70px;
+    -webkit-box-shadow: 0px -15px 10px -5px black;
+    box-shadow: 0px -15px 10px -5px black; }
+  .contactSection * {
+    color: #121212; }
+  .contactSection .wrapper {
+    padding: 30px 0; }
+    .contactSection .wrapper h2 {
+      font-size: 92px;
+      font-weight: 900;
+      line-height: 92px; }
+    .contactSection .wrapper p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+      width: 60%;
+      margin: 20px 0; }
+    .contactSection .wrapper #emailBtn {
+      background: #3F93FF;
+      color: white;
+      padding: 15px 30px;
+      display: inline-block;
+      width: 300px;
+      text-align: center; }
+    .contactSection .wrapper .contactIcons {
+      margin-top: 20px;
+      margin-bottom: 50px; }
+      .contactSection .wrapper .contactIcons a i {
+        font-size: 30px;
+        line-height: 30px;
+        margin-right: 20px;
+        -webkit-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+        transition: all ease-in-out .5s; }
+
+.landingSection .wrapper nav a:hover i {
+  color: #3F93FF;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.landingSection .wrapper nav #btnMenu:hover .barra {
+  background: white; }
+
+.landingSection .wrapper nav #btnMenu:hover #barra5 {
+  width: 40px; }
+
+.landingSection .wrapper nav #btnMenu:hover #barra3 {
+  width: 40px; }
+
+.portfolioSection .wrapper .proyecto:hover .proyectoImageHover {
+  opacity: .5; }
+
+.portfolioSection .wrapper .proyecto:hover .proyectoImage img {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9); }
+
+.portfolioSection .wrapper .proyecto:hover .proyectoImage .proyectoImageLupa i {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.contactSection .wrapper .contactIcons a:hover i {
+  color: #3F93FF; }
+
+@media screen and (max-device-width: 1050px) {
+  .landingSection .wrapper .hero h2 {
+    font-size: 82px;
+    line-height: 82px; } }
+
+@media screen and (max-device-width: 920px) {
+  .landingSection .wrapper .hero h2 {
+    font-size: 72px;
+    line-height: 72px; }
+  .portfolioSection .wrapper h3 {
+    width: 80%; } }
+
+@media screen and (max-device-width: 760px) {
+  .portfolioSection .portfolioBg .portfolioBar {
+    height: 90%; }
+  .portfolioSection .wrapper .proyecto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    height: 600px; }
+    .portfolioSection .wrapper .proyecto .proyectoInfo {
+      width: 100%;
+      height: 40%; }
+    .portfolioSection .wrapper .proyecto .proyectoImage {
+      width: 100%;
+      height: 60%; }
+      .portfolioSection .wrapper .proyecto .proyectoImage img {
+        width: 60%; } }
+
+@media screen and (max-device-width: 720px) {
+  .landingSection .wrapper .hero h1 {
+    font-size: 28px;
+    line-height: 28px; }
+  .contactSection .wrapper h2 {
+    font-size: 80xpx;
+    line-height: 80px; }
+  .contactSection .wrapper p {
+    width: 80%; } }
+
+@media screen and (max-device-width: 580px) {
+  .portfolioSection .wrapper .proyecto .proyectoImage img {
+    width: 80%; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo h2 {
+    font-size: 38px;
+    line-height: 38px; }
+    .portfolioSection .wrapper .proyecto .proyectoInfo h2 span {
+      font-size: 16px;
+      line-height: 16px; }
+  .contactSection .wrapper h2 {
+    font-size: 64px;
+    line-height: 60px; }
+  .contactSection .wrapper p {
+    width: 80%; }
+  .contactSection .wrapper .contactIcons a i {
+    font-size: 26px;
+    line-height: 26px; } }
+
+@media screen and (max-device-width: 520px) {
+  .landingSection .wrapper nav a {
+    margin-left: 15px; }
+  .landingSection .wrapper nav #btnMenu {
+    margin-left: 15px; }
+  .landingSection .wrapper .hero h2 {
+    font-size: 52px;
+    line-height: 52px; }
+  .landingSection .wrapper .hero h1 {
+    font-size: 26px;
+    line-height: 26px; }
+  .portfolioSection .wrapper h3 {
+    font-size: 38px;
+    line-height: 38px; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo h2 {
+    font-size: 32px;
+    line-height: 32px; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo p {
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 5px;
+    width: 90%; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo span.color {
+    margin-top: 5px; } }
+
+@media screen and (max-device-width: 420px) {
+  .contactSection .wrapper p {
+    width: 100%; }
+  .contactSection .wrapper #emailBtn {
+    padding: 10px 15px;
+    width: 250px;
+    font-size: 18px; }
+  .contactSection .wrapper .contactIcons a i {
+    margin-right: 15px; } }
+
+@media screen and (max-device-width: 400px) {
+  .portfolioSection .wrapper .proyecto .proyectoInfo h2 {
+    font-size: 28px;
+    line-height: 28px; }
+    .portfolioSection .wrapper .proyecto .proyectoInfo h2 span {
+      font-size: 16px;
+      line-height: 16px; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo p {
+    font-size: 20;
+    line-height: 22px; } }
+
+@media screen and (max-device-width: 320px) {
+  .landingSection .wrapper nav a {
+    margin-left: 15px; }
+  .landingSection .wrapper .hero h2 {
+    font-size: 42px;
+    line-height: 42px; }
+  .landingSection .wrapper .hero h1 {
+    font-size: 22px;
+    line-height: 22px; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo h2 {
+    font-size: 24px;
+    line-height: 24pxpx; }
+    .portfolioSection .wrapper .proyecto .proyectoInfo h2 span {
+      font-size: 16px;
+      line-height: 16px; }
+  .portfolioSection .wrapper .proyecto .proyectoInfo p {
+    font-size: 18;
+    line-height: 20px; } }
